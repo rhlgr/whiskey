@@ -1,0 +1,753 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+ 
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 2s all ease-in-out;
+    overflow: hidden;
+    z-index: 999;
+}
+.oleft{
+    width: 50%;
+    height: 100%;
+    background-image: url(Miljöbild-Eiktyrne-Quadruple-Batch-II-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.oright{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(237,235,231);
+}
+.otop{
+width: 100%;
+height: 10vh;
+display: flex;
+/* align-items: center; */
+justify-content:flex-end;
+margin-top: 10vh;
+padding-right: 50px;
+}
+i{
+    font: 900 1.1vmax "sans";
+    cursor: pointer;
+}
+.Z{
+    width: 05vw;
+    height: 3vh;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.Z2{
+    font: 400 1vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.612);
+    z-index: 99;
+    transition: .1s all ease-in-out;
+    margin-top: 1vh;
+}
+.Z1{
+    font: 400 1vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.612);
+    z-index: 99;
+    transition: .1s all ease-in-out;
+    /* margin-top: 1vh; */
+}
+.Z:hover .Z1, .Z:hover .Z2 {
+transform: translateY(-130%);
+}
+.omiddle{
+    margin-top: 5vmax;
+    width: 100%;
+    height: 40%;
+    padding-left: 8vmax;
+}
+.omiddle h1{
+    font: 500 2.2vmax "sans";
+    color: rgba(0, 0, 0, 0.612);
+}
+.nav1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8vmax;
+    padding-right: 6vmax;
+
+}
+.nav1 h1{
+    font: 700 .9vmax "roboto";
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.612);
+}
+.box1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(img3-removebg-preview.png);
+    background-position-x: 150px;
+    background-position-y: -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-color: rgb(26,26,23);
+
+  overflow: hidden;
+
+}
+.a{
+    position: absolute;
+    top: -19%;
+    left: 20%;
+}
+.b1top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+ position: fixed;
+}
+
+.b1topl{
+    width: 5%;
+    height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.b1topl h1{
+    font: 500 .9vmax "roboto";
+    letter-spacing: 1.5px;
+    color: rgb(218,206,188);
+    margin-left: 25px;
+    cursor: pointer;
+    z-index: 99;
+    transition: .3s all ease-in-out;
+}
+.b1topl .b1{
+    font: 500 .9vmax "roboto";
+    letter-spacing: 1.5px;
+    color: rgb(218,206,188);
+    margin-left: 25px;
+    cursor: pointer;
+    z-index: 99;
+}
+.b1topl:hover h1{
+ transform: translateY(-100%);
+}
+
+.b1topr{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 2vmax;
+    cursor: pointer;
+}
+.menu{
+    height: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.Y1{
+    font: 500 .9vmax "roboto";
+    letter-spacing: 1.5px;
+    color: rgb(218,206,188);
+    z-index: 99;  
+    transition: .3s all ease-in-out;
+    
+}
+.Y2{
+    font: 500 .9vmax "roboto";
+    letter-spacing: 1.5px;
+    color: rgb(218,206,188);
+    z-index: 99;
+    transition: .3s all ease-in-out;
+  
+}
+.b1topr:hover h1{
+    transform: translateY(-100%);
+   }
+
+   
+.men{
+    width: 1.5%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+       color: rgb(218,206,188);
+       z-index: 99;
+       position: fixed;
+       margin-left: 60px;
+       
+}
+.one{
+    width: 100%;
+    height: 7%;
+    background-color:rgb(218,206,188);
+    margin: 2px;
+    border-radius: 2px;
+
+}
+.two{
+    width: 100%;
+    height: 7%;
+    background-color:rgb(218,206,188);
+    border-radius: 2px;
+    margin: 2px;
+
+}
+.content{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    transition: 5s all ease-in-out;
+}
+
+.content h1{
+    font: 500 .95vmax "roboto";
+    color: rgb(218,206,188);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.content h2{
+    margin-top: 30px;
+    font: 500 2.5vmax "roboto";
+    color: rgb(218,206,188);
+    line-height: 60px;
+    cursor: pointer;
+}
+.contentbottom{
+display: flex;
+align-items: center;
+margin-top: 40px;
+}
+.contentbottom p{
+    font: 500 .95vmax "roboto";
+    color: rgb(218,206,188);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.contentbottom img{
+    color: antiquewhite;
+    margin-left: 5px;
+}
+.content:hover .arrow{
+    transform: translateX(20%);
+}
+.element{
+    width: 15vw;
+    height: 2px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.line{
+    height: 100%;
+    background-color: rgb(218,206,188);
+    position: absolute;
+}
+.content:hover .line , .b2right1:hover .line {
+animation: line1 1s linear;
+}
+@keyframes line1 {
+    0%{
+        width: 0%;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 100%;
+        left: 100%;
+    }
+
+    
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(37,37,37);
+     box-shadow: 100px,100px,100px #000;
+    background-image: url(img2-removebg-preview.png);
+    background-position-x: 580px;
+    background-position-y: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: sticky;
+    bottom: 0%;
+    z-index: -1; */
+}
+.b2left{
+    width: 60%;
+    height: 100%;
+    background-color:rgb(37,37,37);
+    display: flex;
+    align-items: center;
+   
+}
+.b2right{
+   width: 50%;
+   height: 100%;
+   position: relative;
+}
+
+
+.b2right1{
+    width: 60%;
+    height: 40%;
+    /* background-color: rgb(11, 11, 11); */
+    position: absolute;
+    top: 28%;
+    left: 13%;
+    transition: 2s all ease-in-out;
+}
+.h2{
+    width: 0;
+
+}
+.b2right1:hover .h2{
+  width: 50%;
+}
+.b2rightbottom{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    }
+.b2right1 h1{
+    font: 500 .95vmax "roboto";
+    color: rgb(218,206,188);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.b2right1 h2{
+    margin-top: 30px;
+    font: 500 2.5vmax "roboto";
+    color: rgb(218,206,188);
+    line-height: 60px;
+    cursor: pointer;
+}
+.b2right1 p{
+    font: 500 .95vmax "roboto";
+    color: rgb(218,206,188);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.b2right1 img{
+    margin-left: 5px;
+}
+
+.box3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(244,241,236);
+    position: relative;
+}
+.box3 h1{
+    font: 550 .95vmax "roboto";
+    letter-spacing: 1.5px;
+}
+.box3 h2{
+    font: 500 2.5vmax "sans";
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.swiper {
+    margin-top: 2vmax;
+    width:60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+
+  }
+  
+.cla{
+    color: #000;
+}
+.swiper-slide{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    /* margin: 0 60px; */
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+
+ }
+.button{
+    width: 11%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-top: 4vmax;
+}
+.see{
+    width: 100%;
+    height: 2.5vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.M1{
+    font: 500 .95vmax "roboto";
+    cursor: pointer;
+}
+.M2{
+    font: 500 .95vmax "roboto";
+    cursor: pointer;
+}
+.button:hover .M1 ,.button:hover .M2{
+    transform: translateY(-100%);
+}
+
+
+
+.box4{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244,241,236);
+}
+.box4a{
+    width: 100%;
+    height: 90%; 
+    background-color: rgb(244,241,236);
+    padding: 0 150px;
+}
+.b4top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
+.b4top h1{
+    font: 550 .95vmax "roboto";
+    letter-spacing: 2px;
+    margin-right: 73vmax;
+    color: rgba(0, 0, 0, 0.612);
+}
+.b4top1{
+    margin-top: 20px;
+    display: flex;
+    margin-right: 47vmax;
+}
+.b4top1 h2{
+    font: 400 2vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.612);
+}
+.A{
+    width: 20vw;
+    height: 5vh;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.A2{
+    font: 400 2vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.612);
+    z-index: 99;
+    transition: .1s all ease-in-out;
+}
+.A1{
+    font: 400 2vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.612);
+    z-index: 99;
+    transition: .1s all ease-in-out;
+}
+.A:hover .A1, .A:hover .A2 {
+transform: translateY(-100%);
+}
+.b4middle{
+    display: flex;
+margin-top: 60px;
+    
+}
+.b4left{
+    width: 50%;
+    height: 40%;
+
+}
+.b4left h1{
+    font: 400 .95vmax "roboto";
+    letter-spacing: 2px;
+}
+.b4left h2{
+    margin-top: 50px;
+    font: 400 2.1vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.612);
+}
+.mail{
+    width: 65%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.mail input{
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+    letter-spacing: 2px;
+    padding: 0 110px 0 0;
+}
+
+.BIGB{
+
+    width: 10vw;
+    height: 5vh;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid black;
+    flex-direction: column;
+}
+.B{
+    text-align: center;
+    width: 10vw;
+    height:2.5vh;
+    position: relative;
+    overflow: hidden;
+}
+.B2{
+    font: 400 2vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0,);
+    z-index: 99;
+    transition: .1s all ease-in-out;
+}
+.B1{
+    font: 400 2vmax "sans";
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0,);
+    z-index: 99;
+    transition: .1s all ease-in-out;
+}
+.BIGB:hover .B1, .BIGB:hover .B2 {
+transform: translateY(-100%);
+}
+.h4{
+    width: 40%;
+}
+.b4right{
+    width: 50%;
+    height: 40%;
+
+}
+.b4right h1{
+    font: 500 2.2vmax "sans";
+    color: rgba(0, 0, 0, 0.612);
+}
+.m1,.m2,.m3,.m4,.m5 {
+    width: 70%;
+    height: 5vh;
+    margin-top: 08px;
+    cursor: pointer;  
+}
+
+.ele1{
+    width: 9.2vw;
+    height: .6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.ele2{
+    width: 21vw;
+    height: .6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.ele3{
+    width: 17vw;
+    height: 1px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.ele4{
+    width: 16vw;
+    height: .6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.ele5{
+    width: 13.5vw;
+    height: .6px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.line1{
+    height: 100%;
+    background-color: black;
+    position: absolute;
+}
+.m1:hover .line1,.m2:hover .line1,.m3:hover .line1,.m4:hover .line1,.m5:hover .line1 {
+animation: line1 1s linear;
+}
+@keyframes line1 {
+    0%{
+        width: 0%;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 100%;
+        left: 100%;
+    }
+
+    
+}
+.last1{
+   
+    width: 100%;
+    height:15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.icon{
+    display: flex;
+}
+.icon h1{
+    font: 500 .95vmax "roboto";
+    letter-spacing: 2px;
+    margin: 0 5px;
+}
+.C,.D{
+    width: 1.5vw;
+    height: 2.5vh;
+    overflow: hidden;
+}
+.E,.F,.G,.H,.I,.J{
+    width: 10vw;
+    height: 2vh;
+    overflow: hidden;
+    text-align: center;
+}
+.C2,.D2,.E2,.F2,.G2,.H2,.I2,.J2{
+    transition: .1s all ease-in-out;
+}
+.C1,.D3,.E1,.F1,.G1,.H1,.I1,.J1{
+    transition: .1s all ease-in-out;
+}
+.C:hover .C1, .C:hover .C2, 
+.D:hover .D1, .D:hover .D2,
+.E:hover .E1, .E:hover .E2,
+.F:hover .F1, .F:hover .F2,
+.G:hover .G1, .G:hover .G2,
+.H:hover .H1, .H:hover .H2,
+.I:hover .I1, .I:hover .I2,
+.J:hover .J1, .J:hover .J2
+{
+transform: translateY(-100%);
+}
+.nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav h1{
+    font: 500 .95vmax "roboto";
+    letter-spacing: 2px;
+    /* margin: 0 5px; */
+    cursor: pointer;
+}
+
+
+.last2{
+    margin-top: 40px;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237,235,231);
+    padding: 0 150px;
+}
+.last2 h1{
+    font: 200 .75vmax "roboto";
+    color: rgb(56, 55, 56);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.swiper-button-prev{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
